@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profil Biodata</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 80px;
+            background-color: #ecf0f1;
+        }
+
+        .hero-text {
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .hero-text h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        .hero-text p {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .hero button {
+            background-color: #748a99;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .hero button:hover {
+            background-color: #a8b8c3;
+        }
+
+        .hero img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* About Me Section */
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .about h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .biodata {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .biodata-item {
+            background-color: #748a99;
+            color: #143e5d;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        /* Ubah warna teks hanya pada label */
+        .biodata-item .label {
+            color: #061829; /* Warna label */
+            font-weight: bold;
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ecf0f1;
+        }
+
+        .portfolio h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        /* **Default untuk Desktop (>=1024px)** */
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            width: 280px; /* Sesuaikan dengan desain */
+            height: 498px; /* Sesuaikan dengan aspek rasio */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%; /* Pastikan gambar mengisi container */
+            height: 100%;
+            object-fit: cover; /* Memastikan gambar tetap proporsional */
+            aspect-ratio: 899 / 1599; /* Menyesuaikan dengan ukuran target */
+            border-radius: 10px;
+        }
+
+        /* **Tablet (Lebar Maksimal 1024px)** */
+        @media screen and (max-width: 1024px) {
+            .portfolio-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+                gap: 20px;
+            }
+
+            .portfolio-item {
+                width: 90%; /* Mengisi lebih banyak ruang */
+                height: auto; /* Biarkan tinggi menyesuaikan */
+            }
+        }
+
+        /* **Mobile (Lebar Maksimal 600px)** */
+        @media screen and (max-width: 600px) {
+            .portfolio-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .portfolio-item {
+                width: 100%; /* Mengisi seluruh layar */
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Selamat Datang di Website Saya</h2>
+            <p>Saya seorang Graphic Designer</p>
+            <button>Pelajari lebih lanjut</button>
+        </div>
+        <img src="e:/Pictures/Me/WhatsApp Image 2025-01-17 at 17.47.46_e3acb87f.jpg" alt="Profil">
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about">
+        <h3>About Me</h3>
+        <div class="biodata">
+            <div class="biodata-item"><span class="label">Full Name:</span> Wida Aulia Rahmawati</div>
+            <div class="biodata-item"><span class="label">Education:</span> Telkom University</div>
+            <div class="biodata-item"><span class="label">Job:</span> Graphic Designer</div>
+            <div class="biodata-item"><span class="label">Contact:</span> 0857-0361-6299</div>
+            <div class="biodata-item"><span class="label">Hobbies:</span> Watching movies</div>
+            <div class="biodata-item"><span class="label">Address:</span> Cimahi</div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h3>Portfolio</h3>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="e:/Pictures/poster seblak.jpg" alt="Project 1">
+                <p><strong>Project 1</strong></p>
+                <p>Poster UMKM</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="e:/Pictures/poster.jpg" alt="Project 2">
+                <p><strong>Project 2</strong></p>
+                <p>Poster Infografis</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="e:\Pictures\poster agama .jpg" alt="Project 3">
+                <p><strong>Project 3</strong></p>
+                <p>Poster Agama</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
